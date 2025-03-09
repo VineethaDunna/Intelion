@@ -1,0 +1,126 @@
+/* Services Section */
+.services-section {
+	padding: 60px 20px;
+	background: #f9f9f9;
+	text-align: center;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+	margin-bottom: 40px;
+}
+
+.badge {
+	display: inline-block;
+	background: white;
+	color: #333;
+	font-weight: bold;
+	padding: 6px 12px;
+	border-radius: 20px;
+	border: 1px solid rgb(1, 1, 75);
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #222;
+}
+
+/* Services Grid */
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 20px;
+}
+
+/* Service Item */
+.service-item {
+	position: relative;
+	border-radius: 10px;
+	background: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	padding: 20px;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.service-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Hover Effect */
+.service-bg {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(to bottom, rgb(48, 48, 150), rgb(241, 240, 252));
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	z-index: 0;
+}
+
+.service-item:hover .service-bg {
+	opacity: 1;
+}
+
+/* Service Content */
+.service-content {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+
+.icon {
+	font-size: 50px;
+	color: rgb(1, 1, 75);
+	margin-bottom: 15px;
+	transition: color 0.3s;
+}
+
+.service-item:hover .icon {
+	color: white;
+}
+
+/* Title & Description */
+.service-item h4 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	transition: color 0.3s ease-in-out;
+}
+
+.service-item p {
+	color: #666;
+	font-size: 14px;
+	transition: color 0.3s ease-in-out;
+}
+
+.service-item:hover h4,
+.service-item:hover p {
+	color: white;
+}
+
+/* Button */
+.learn-more-btn {
+	display: inline-block;
+	background: rgb(1, 1, 75);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.service-item:hover .learn-more-btn {
+	background: white;
+	color: rgb(1, 1, 75);
+}

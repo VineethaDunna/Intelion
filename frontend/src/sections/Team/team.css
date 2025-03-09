@@ -1,0 +1,53 @@
+.team-item {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.team-item .team-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.team-button:hover {
+	background-color: rgb(1, 1, 75) !important;
+	color: white !important;
+}
+
+.team-item .team-icon .share-link {
+	opacity: 0;
+	transition: 0.9s;
+	background-color: rgb(1, 1, 75) !important;
+}
+.share {
+	background-color: rgb(1, 1, 75) !important;
+}
+
+.team-item:hover .share-link {
+	opacity: 1;
+}
+.wow {
+	visibility: visible !important;
+}
+
+.team-item .team-content {
+	transition: 0.9s;
+}
+
+.team-item:hover .team-content {
+	background-color: #51779b !important;
+	color: white !important;
+}
+
+.team-item .team-content h4,
+.team-item .team-content p {
+	transition: 0.5s;
+}
+
+.team-item:hover .team-content h4 {
+	color: rgb(218, 221, 236) !important;
+}
+
+.team-item:hover .team-content p {
+	color: var(--bs-white);
+}

@@ -1,0 +1,18 @@
+.scroll-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: #007bff;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: none; /* Initially hidden */
+	transition: opacity 0.3s ease-in-out;
+	z-index: 1000;
+}
+
+.scroll-top.show {
+	display: block; /* Show when isVisible is true */
+}
